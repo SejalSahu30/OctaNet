@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Dance World Academy</title>
+</head>
+<body>
+ <nav>
+   <div class="logo">Landing Page</div>
+   <!-- toggle menu button -->
+   <span class="menubtn" onclick="openNav()">&#9776;</span>
+ 
+   <div class="navLinks">
+     <ul>
+       <li><a href="#">Home</a></li>
+       <li><a href="#">About</a></li>
+       <li><a href="#">Interest</a></li>
+       <li><a href="#">Contact</a></li>
+       <button type="button">Login</button>
+     </ul>
+   </div>
+ </nav>
+   <!-- responsive side navbar -->
+   <div class="sideNav" id="sidenav">
+     <a href="#" class="closeBtn" onclick="closeNav()"> &#10006;</a>
+     <a href="#">Home</a>
+     <a href="#">About</a>
+     <a href="#">Interest</a>
+     <a href="#">Contact</a>
+     <a href="#"><button type="button">Login</button> </a>
+   </div>
+   
+   <!-- Header content with banner image -->
+   <div class="row">
+     <div class="column1">
+        <h1>Welcome to Dance World!</h1>
+       <p>Contact us to show how dance is!</p>
+       <button>Register</button>
+     </div>
+     <div class="column2">
+       <img src="Hippop.jpeg" alt="banner" width="500px">
+     </div>
+       <div class="container">
+        <h2>Our Dance Classes</h2>
+        <div class="classes">
+            <div class="class">
+                <img src="ballet.jpg" alt="Ballet Class">
+                <h3 class="class-title">Ballet</h3>
+                <p class="class-description">Explore the grace and beauty of ballet.</p>
+            </div>
+            <div class="class">
+                <img src="freestyle.jpeg" alt="FreeStyle Class">
+                <h3 class="class-title">FreeStyle</h3>
+                <p class="class-description">Get your free style moves.</p>
+            </div>
+            <div class="class">
+                <img src="salsa.jpeg" alt="Salsa Class">
+                <h3 class="class-title">Salsa</h3>
+                <p class="class-description">Spice up your life with salsa dancing.</p>
+            </div>
+   </div>
+        <div class="footer">
+        <p>&copy; 2023 Dance Academy. All rights reserved.</p>
+    </div>
+   
+   <!-- javascript to make side menu appear -->
+ <script>
+   function openNav() {
+     document.getElementById("sidenav").style.width = "50%";
+   }
+   function closeNav() {
+     document.getElementById("sidenav").style.width = "0%";
+   }
+ </script>
+ 
+</body>
+</html>
